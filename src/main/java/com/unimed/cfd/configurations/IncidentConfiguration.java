@@ -19,27 +19,28 @@ public class IncidentConfiguration {
 
 	@Id
 	private int id;
-	
+
 	@NotEmpty
 	private String description;
-	
+
 	@CreatedDate
 	private Date date;
-	
+
 	@LastModifiedDate
 	private Date lastModified;
-	
+
 	@NotEmpty
 	private String username;
-	
+
 	@NotEmpty
 	private String password;
-	
+
 	@OneToMany
+	@NotEmpty(message = "Você precisa definir no mínimo um grupo")
 	private List<Group> groups;
-	
+
 	private boolean enabled;
-	
+
 	private Date lastRun;
 
 }
