@@ -15,7 +15,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class IncidentConfiguration {
+public class Configuration {
 
 	@Id
 	private int id;

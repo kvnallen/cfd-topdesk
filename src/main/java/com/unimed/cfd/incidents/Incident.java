@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.unimed.cfd.resources.incidents.TopdeskIncidentDeserializer;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.unimed.cfd.resources;
+package com.unimed.cfd.resources.incidents;
 
 import java.util.List;
 

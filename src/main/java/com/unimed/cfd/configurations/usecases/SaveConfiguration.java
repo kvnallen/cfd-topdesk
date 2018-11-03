@@ -2,21 +2,21 @@ package com.unimed.cfd.configurations.usecases;
 
 import org.springframework.stereotype.Service;
 
-import com.unimed.cfd.configurations.IncidentConfiguration;
-import com.unimed.cfd.configurations.IncidentConfigurationRepository;
+import com.unimed.cfd.configurations.Configuration;
+import com.unimed.cfd.configurations.gateways.ConfigurationRepository;
 
 @Service
 public class SaveConfiguration {
 
-	private IncidentConfigurationRepository repository;
+	private ConfigurationRepository repository;
 
 
-	public SaveConfiguration(IncidentConfigurationRepository repository) {
+	public SaveConfiguration(ConfigurationRepository repository) {
 		this.repository = repository;
 	}
 	
 	
-	public void save(IncidentConfiguration config) {
+	public void save(Configuration config) {
 		// check if group id's are valid
 		// check if username && password are valid
 		
